@@ -5,6 +5,38 @@ date: "2026-02-24"
 format: html
 ---
 
+# set up
+
+```{r}
+#| label: set up chunk
+# reading in packages
+library(tidyverse) # general use for data wrangling, cleaning, etc. 
+library(lterdatasampler) # package witj LTER data sets 
+
+data("pie_crab") # extracting pie crab data set from lterdatasampler 
+
+```
+
+# Exploratory Visulaization 
+
+```{r}
+#| label: latitude size plot
+
+ggplot(data = pie_crab,
+       aes(x = latitude, 
+           y = size )) + 
+  geom_point()
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
